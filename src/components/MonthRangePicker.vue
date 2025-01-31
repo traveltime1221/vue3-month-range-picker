@@ -145,8 +145,8 @@ onBeforeUnmount(() => {
             <input type='button' v-model='displayText' :placeholder='placeholder' @click='openPanel' @blur='handleGlobalClick' />
         </div>
 
-        <!-- 月份選擇面板 v-if='isPanelOpen' -->
-        <div  class='months-panel'>
+        <!-- 月份選擇面板 -->
+        <div  class='months-panel' v-if='isPanelOpen'>
             <div v-for='month in months' :key='month.id' :class='[ "month", {
                     "start-month": month.id === props.startMonth,
                     "end-month": month.id === props.endMonth,

@@ -1,8 +1,11 @@
-!function(){"use strict";try{if("undefined"!=typeof document){var d=document.createElement("style");d.appendChild(document.createTextNode(".month-range-picker[data-v-71d16e4a]{position:relative}.month-range-picker .input-field input[data-v-71d16e4a]{padding:8px;border:1px solid #ddd;border-radius:5px;cursor:pointer;width:100%;background:#fff;text-align:left}.months-panel[data-v-71d16e4a]{max-width:250px;display:flex;flex-wrap:wrap;margin-top:5px;border:1px solid #ddd;padding:12px;border-radius:5px;position:absolute;background:#fff;z-index:10;box-shadow:0 2px 5px #0003;color:#000}.month[data-v-71d16e4a]{width:calc(33.3333333333% - 20px);text-align:center;padding:4px 10px;margin:0;cursor:pointer;border:0}.month.start-month[data-v-71d16e4a]{background-color:#007bff;color:#fff;border-top-left-radius:4px;border-bottom-left-radius:4px}.month.end-month[data-v-71d16e4a]{background-color:#007bff;color:#fff;border-top-right-radius:4px;border-bottom-right-radius:4px}.month.in-range[data-v-71d16e4a],.month.hover-range[data-v-71d16e4a]{background-color:#e0efff}.month[data-v-71d16e4a]:hover{background-color:#007bff;color:#fff;border-radius:4px}")),document.head.appendChild(d)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}}();
-import { defineComponent, ref, watch, toRefs, onMounted, onBeforeUnmount, openBlock, createElementBlock, withModifiers, createElementVNode, withDirectives, isRef, vModelText, unref, Fragment, renderList, normalizeClass, toDisplayString } from "vue";
+!function(){"use strict";try{if("undefined"!=typeof document){var d=document.createElement("style");d.appendChild(document.createTextNode(".month-range-picker[data-v-cad7382f]{position:relative}.month-range-picker .input-field input[data-v-cad7382f]{padding:8px;border:1px solid #ddd;border-radius:5px;cursor:pointer;width:100%;background:#fff;text-align:left}.months-panel[data-v-cad7382f]{max-width:250px;display:flex;flex-wrap:wrap;margin-top:5px;border:1px solid #ddd;padding:12px;border-radius:5px;position:absolute;background:#fff;z-index:10;box-shadow:0 2px 5px #0003;color:#000}.month[data-v-cad7382f]{width:calc(33.3333333333% - 20px);text-align:center;padding:4px 10px;margin:0;cursor:pointer;border:0}.month.start-month[data-v-cad7382f]{background-color:#007bff;color:#fff;border-top-left-radius:4px;border-bottom-left-radius:4px}.month.end-month[data-v-cad7382f]{background-color:#007bff;color:#fff;border-top-right-radius:4px;border-bottom-right-radius:4px}.month.in-range[data-v-cad7382f],.month.hover-range[data-v-cad7382f]{background-color:#e0efff}.month[data-v-cad7382f]:hover{background-color:#007bff;color:#fff;border-radius:4px}")),document.head.appendChild(d)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}}();
+import { defineComponent, ref, watch, toRefs, onMounted, onBeforeUnmount, openBlock, createElementBlock, withModifiers, createElementVNode, withDirectives, isRef, vModelText, unref, Fragment, renderList, normalizeClass, toDisplayString, createCommentVNode } from "vue";
 const _hoisted_1 = { class: "input-field" };
 const _hoisted_2 = ["placeholder"];
-const _hoisted_3 = { class: "months-panel" };
+const _hoisted_3 = {
+  key: 0,
+  class: "months-panel"
+};
 const _hoisted_4 = ["onClick", "onMouseover"];
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "MonthRangePicker",
@@ -125,7 +128,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             [vModelText, unref(displayText)]
           ])
         ]),
-        createElementVNode("div", _hoisted_3, [
+        unref(isPanelOpen) ? (openBlock(), createElementBlock("div", _hoisted_3, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(months), (month) => {
             return openBlock(), createElementBlock("div", {
               key: month.id,
@@ -143,7 +146,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               onMouseleave: clearHover
             }, toDisplayString(month.name), 43, _hoisted_4);
           }), 128))
-        ])
+        ])) : createCommentVNode("", true)
       ]);
     };
   }
@@ -155,7 +158,7 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const MonthRangePicker = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-71d16e4a"]]);
+const MonthRangePicker = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-cad7382f"]]);
 export {
   MonthRangePicker as default
 };
