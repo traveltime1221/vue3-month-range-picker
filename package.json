@@ -1,0 +1,48 @@
+{
+  "name": "vue3-month-range-picker",
+  "version": "1.0.0",
+  "main": "dist/vue3-month-range-picker.cjs.js",
+  "module": "dist/vue3-month-range-picker.es.js",
+  "types": "dist/vue3-month-range-picker.d.ts",
+  "exports": {
+    "import": "./dist/vue3-month-range-picker.es.js",
+    "require": "./dist/vue3-month-range-picker.cjs.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "btn",
+    "button",
+    "custome",
+    "component",
+    "vite",
+    "vue",
+    "vue3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/traveltime1221/vue3-month-range-picker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/compiler-sfc": "^3.5.13",
+    "sass": "^1.83.4",
+    "terser": "^5.37.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "vue": "^3.5.13"
+  }
+}
