@@ -1,6 +1,6 @@
 {
   "name": "vue3-month-range-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/vue3-month-range-picker.cjs.js",
   "module": "dist/vue3-month-range-picker.es.js",
   "types": "dist/vue3-month-range-picker.d.ts",
@@ -16,8 +16,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "btn",
-    "button",
+    "month",
+    "range",
+    "monthRange",
+    "month-range",
+    "picker",
+    "calendar",
     "custome",
     "component",
     "vite",

@@ -49,6 +49,7 @@ let endMonth = ref<string | undefined>('12');
 
 
 ## 版本歷程
+* 1.0.1 文件修正
 * 1.0.0 第一次發布
 
 ## License
